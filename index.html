@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Developer Portfolio</h1>
+        <p>Your gateway to exploring my skills, projects, and career growth!</p>
+        <img src="D:\Project\Developer Illustration.jpg" alt="Developer Illustration" class="header-image">
+    </header>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a passionate developer with expertise in C++, HTML, CSS, JavaScript, and web technologies. I specialize in creating interactive and dynamic web applications and enjoy exploring new technologies.</p>
+        <img src="D:\Project\Untitled design.png" alt="Developer" class="about-img">
+        <button onclick="window.location.href='D:\Project\Resume.pdf'">Download Resume</button>
+    </section>
+
+    <section id="skills">
+        <h2>Skills & Proficiency</h2>
+        <p>I am continuously improving my skills. Here's a glimpse of my current proficiency:</p>
+        <form id="skillsForm">
+            <label for="cpp">Rate your C++ skills (1-10):</label>
+            <input type="number" id="cpp" name="cpp" min="1" max="10">
+            
+            <label for="html">Rate your HTML skills (1-10):</label>
+            <input type="number" id="html" name="html" min="1" max="10">
+            
+            <label for="css">Rate your CSS skills (1-10):</label>
+            <input type="number" id="css" name="css" min="1" max="10">
+            
+            <input type="submit" value="Submit Skills">
+        </form>
+        <div id="skillResult"></div>
+        <div id="skillsChart"></div>
+    </section>
+
+    <section id="career">
+        <h2>Career Progress Simulation</h2>
+        <p>Simulate your career path and see how your role and salary could grow based on your experience:</p>
+        <form id="careerForm">
+            <label for="role">Current Role:</label>
+            <input type="text" id="role" name="role">
+            
+            <label for="years">Years of Experience:</label>
+            <input type="number" id="years" name="years">
+            
+            <input type="submit" value="Simulate Career Progress">
+        </form>
+        <div id="careerResult"></div>
+        <div id="careerGrowthChart"></div>
+    </section>
+
+    <section id="projects">
+        <h2>Project Showcase</h2>
+        <p>Check out some of the projects I have worked on:</p>
+        <div id="projectList">
+            <div class="project">
+                <h3>Project One</h3>
+                <p>A web application for managing tasks.</p>
+                <button>View Project</button>
+                <img src="D:\Project\file manajer.jpg" alt="Task Manager" class="project-img">
+            </div>
+            <div class="project">
+                <h3>Project Two</h3>
+                <p>An interactive data visualization tool.</p>
+                <button>View Project</button>
+                <img src="D:\Project\file manajer.jpg" alt="Data Visualization" class="project-img">
+            </div>
+            <div class="project">
+                <h3>Project Three</h3>
+                <p>A simple calculator built with C++.</p>
+                <button>View Project</button>
+                <img src="D:\Project\file manajer.jpg" alt="Calculator" class="project-img">
+            </div>
+        </div>
+    </section>
+
+    <section id="calculator">
+        <h2>Interactive Project Estimation</h2>
+        <form id="projectForm">
+            <label for="experience">Enter your experience in years:</label>
+            <input type="number" id="experience" name="experience">
+            
+            <label for="projects">Number of projects worked on:</label>
+            <input type="number" id="projects" name="projects">
+            
+            <label for="skill">Rate your skill level (1-10):</label>
+            <input type="number" id="skill" name="skill" min="1" max="10">
+            
+            <input type="submit" value="Estimate Project Growth">
+        </form>
+        <div id="projectResult"></div>
+    </section>
+
+    <footer>
+        <p>Contact: adarshksingh1911@gmail.com</p>
+        <p>&copy; 2024 My Developer Portfolio. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- For charts -->
+</body>
+</html>
